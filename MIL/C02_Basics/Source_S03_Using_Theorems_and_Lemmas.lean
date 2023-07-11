@@ -36,7 +36,7 @@ The library designers have set the arguments ``a``, ``b`` and ``c`` to ``le_tran
 so that Lean will *not* let you provide them explicitly (unless you
 really insist, as we will discuss later).
 Rather, it expects to infer them from the context in which they are used.
-For example, when hypotheses ``h : a ≤ b`` and  ``h' : b ≤ c``
+For example, when hypotheses ``h : a ≤ b`` and ``h' : b ≤ c``
 are in the context,
 all the following work:
 TEXT. -/

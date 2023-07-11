@@ -24,7 +24,7 @@ The filters that correspond to these descriptions will be defined later in this 
 * ``(atTop : Filter ℕ)``, made of sets of ``ℕ`` containing ``{n | n ≥ N}`` for some ``N``
 * ``𝓝 x``, made of neighborhoods of ``x`` in a topological space
 * ``𝓤 X``, made of entourages of a uniform space (uniform spaces generalize metric spaces and topological groups)
-* ``μ.ae`` , made of sets whose complement has zero measure with respect to a measure ``μ``.
+* ``μ.ae``, made of sets whose complement has zero measure with respect to a measure ``μ``.
 
 The general definition is as follows: a filter ``F : Filter X`` is a
 collection of sets ``F.sets : Set (Set X)`` satisfying the following:
@@ -49,7 +49,7 @@ condition then says that ``univ`` is sufficiently large, the second one says tha
 large set is sufficiently large and the third one says that the intersection of two sufficiently large sets
 is sufficiently large.
 
-It may be even  more useful to think of a filter on a type ``X``
+It may be even more useful to think of a filter on a type ``X``
 as a generalized element of ``Set X``. For instance, ``atTop`` is the
 "set of very large numbers" and ``𝓝 x₀`` is the "set of points very close to ``x₀``."
 One manifestation of this view is that we can associate to any ``s : Set X`` the so-called *principal filter*
@@ -174,7 +174,7 @@ EXAMPLES: -/
 -- QUOTE.
 
 /- TEXT:
-Together these two properties allow us to prove that limits compose, yielding in one shot all 256 variants
+Together these two properties allow us to prove that limits compose, yielding in one shot all 512 variants
 of the composition lemma described in the introduction, and lots more.
 You can practice proving the following statement using either the definition
 of ``Tendsto₁`` in terms of the
@@ -325,7 +325,7 @@ nontriviality in some lemmas.
 In return, however, the theory has nicer global properties.
 We have already seen that including the trivial filter gives us a
 bottom element. It also allows us to define ``principal : Set X → Filter X``,
-which maps  ``∅`` to ``⊥``, without adding a precondition to rule out the empty set.
+which maps ``∅`` to ``⊥``, without adding a precondition to rule out the empty set.
 And it allows us to define the pullback operation without a precondition as well.
 Indeed, it can happen that ``comap f F = ⊥`` although ``F ≠ ⊥``. For instance,
 given ``x₀ : ℝ`` and ``s : Set ℝ``, the pullback of ``𝓝 x₀`` under the coercion
@@ -354,7 +354,7 @@ we have ``U ∈ F`` if and only if it contains some ``s i``. In other words, for
 ``∀ U : Set X, U ∈ F ↔ ∃ i, s i ⊆ U``. It is even more flexible to consider
 a predicate on ``ι`` that selects only some of the values ``i`` in the indexing type.
 In the case of ``𝓝 x₀``, we want ``ι`` to be ``ℝ``, we write ``ε`` for ``i``, and the predicate should select the positive values of ``ε``.
-So the fact that the sets ``Ioo  (x₀ - ε) (x₀ + ε)`` form a basis for the
+So the fact that the sets ``Ioo (x₀ - ε) (x₀ + ε)`` form a basis for the
 neighborhood topology on ``ℝ`` is stated as follows:
 EXAMPLES: -/
 -- QUOTE:
@@ -481,7 +481,7 @@ This is a special case of the theorem ``mem_closure_of_tendsto`` from the
 topology library.
 See if you can prove it using the quoted lemmas,
 using the fact that ``ClusterPt x F`` means ``(𝓝 x ⊓ F).NeBot`` and that,
-by definition, the assumption ``∀ᶠ n in atTop, u n ∈ M`` means  ``M ∈ map u atTop``.
+by definition, the assumption ``∀ᶠ n in atTop, u n ∈ M`` means ``M ∈ map u atTop``.
 EXAMPLES: -/
 -- QUOTE:
 #check mem_closure_iff_clusterPt

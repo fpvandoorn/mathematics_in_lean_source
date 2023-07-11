@@ -45,7 +45,7 @@ example {ι : Type _} [Fintype ι] {s : ι → Set X} (hs : ∀ i, IsOpen (s i))
 
 /- TEXT:
 
-Closed sets are then defined as sets whose complement  is open. A function between topological spaces
+Closed sets are then defined as sets whose complement is open. A function between topological spaces
 is (globally) continuous if all preimages of open sets are open.
 BOTH: -/
 -- QUOTE:
@@ -219,7 +219,7 @@ on neighborhoods more than open sets so, for any ``x : X`` we want the map from 
 ``fun T : TopologicalSpace X ↦ @nhds X T x`` to be order preserving.
 And we know the order relation on ``Filter X`` is designed to ensure an order
 preserving ``principal : Set X → Filter X``, allowing to see filters as generalized sets.
-So the order relation we do use on  ``topological_structure X`` is opposite to the one coming from ``Set (Set X)``.
+So the order relation we do use on ``topological_structure X`` is opposite to the one coming from ``Set (Set X)``.
 
 BOTH: -/
 -- QUOTE:
@@ -378,7 +378,7 @@ Since ``Y`` is regular, it suffices to check that for every *closed* neighborhoo
 ``V'`` of ``φ x``, ``φ ⁻¹' V' ∈ 𝓝 x``.
 The limit assumption gives (through the auxiliary lemma above)
 some ``V ∈ 𝓝 x`` such ``IsOpen V ∧ (↑) ⁻¹' V ⊆ f ⁻¹' V'``.
-Since ``V ∈ 𝓝 x``, it suffices to prove ``V ⊆ φ ⁻¹' V'``, ie  ``∀ y ∈ V, φ y ∈ V'``.
+Since ``V ∈ 𝓝 x``, it suffices to prove ``V ⊆ φ ⁻¹' V'``, ie ``∀ y ∈ V, φ y ∈ V'``.
 Let's fix ``y`` in ``V``. Because ``V`` is *open*, it is a neighborhood of ``y``.
 In particular ``(↑) ⁻¹' V ∈ comap (↑) (𝓝 y)`` and a fortiori ``f ⁻¹' V' ∈ comap (↑) (𝓝 y)``.
 In addition ``comap (↑) (𝓝 y) ≠ ⊥`` because ``A`` is dense.

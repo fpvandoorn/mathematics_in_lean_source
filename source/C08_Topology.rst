@@ -66,7 +66,7 @@ The problem is compounded even further when it comes to the supporting lemmas.
 For instance, limits compose: if
 ``f x`` tends to ``y₀`` when ``x`` tends to ``x₀`` and
 ``g y`` tends to ``z₀`` when ``y`` tends to ``y₀`` then
-``g ∘ f x`` tends to ``z₀`` when ``x`` tends to ``x₀``.
+``(g ∘ f) x`` tends to ``z₀`` when ``x`` tends to ``x₀``.
 There are three notions of "tends to" at play here,
 each of which can be instantiated in any of the eight ways described
 in the previous paragraph.

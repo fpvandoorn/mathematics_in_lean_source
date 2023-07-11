@@ -113,7 +113,7 @@ structure RingHom₁ (R S : Type) [Ring R] [Ring S] extends MonoidHom₁ R S, Ad
 There are a couple of issues about this approach. A minor one is we don't quite know where to put
 the ``coe`` attribute since the ``RingHom₁.toFun`` does not exist, the relevant function is
 ``MonoidHom₁.toFun ∘ RingHom₁.toMonoidHom₁`` which is not a declaration that can be tagged with an
-attribute (but we could still define a ``CoeFun  (RingHom₁ R S) (fun _ ↦ R → S)`` instance).
+attribute (but we could still define a ``CoeFun (RingHom₁ R S) (fun _ ↦ R → S)`` instance).
 A much more important one is that lemmas about monoid morphisms won't directly apply
 to ring morphisms. This leaves the alternative of either juggling with ``RingHom₁.toMonoidHom₁``
 each time we want to apply a monoid morphism lemma or restate every such lemmas for ring morphisms.

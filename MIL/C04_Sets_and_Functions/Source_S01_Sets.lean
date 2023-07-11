@@ -455,7 +455,7 @@ end
 
 Lean introduces the notation ``∀ x ∈ s, ...``,
 "for every ``x`` in ``s`` .,"
-as an abbreviation for  ``∀ x, x ∈ s → ...``.
+as an abbreviation for ``∀ x, x ∈ s → ...``.
 It also introduces the notation ``∃ x ∈ s, ...,``
 "there exists an ``x`` in ``s`` such that .."
 These are sometimes known as *bounded quantifiers*,

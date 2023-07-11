@@ -10,7 +10,7 @@ import Mathlib.Analysis.SpecialFunctions.Log.Basic
 Functions
 ---------
 
-If ``f : α → β`` is a function and  ``p`` is a set of
+If ``f : α → β`` is a function and ``p`` is a set of
 elements of type ``β``,
 the library defines ``preimage f p``, written ``f ⁻¹' p``,
 to be ``{x | f x ∈ p}``.
@@ -40,7 +40,7 @@ If ``s`` is a set of elements of type ``α``,
 the library also defines ``image f s``,
 written ``f '' s``,
 to be ``{y | ∃ x, x ∈ s ∧ f x = y}``.
-So a hypothesis  ``y ∈ f '' s`` decomposes to a triple
+So a hypothesis ``y ∈ f '' s`` decomposes to a triple
 ``⟨x, xs, xeq⟩`` with ``x : α`` satisfying the hypotheses ``xs : x ∈ s``
 and ``xeq : f x = y``.
 The ``rfl`` tag in the ``rintro`` tactic (see :numref:`the_existential_quantifier`) was made precisely
